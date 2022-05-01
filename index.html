@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        img {
+            width: 40%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Scholarly HTML</title>
+    <meta charset="UTF-8">
+    <meta name="authors" content="Croitoru Razvan">
+</head>
+
+<body>
+<h1>Dataset Augmentation Tool</h1>
+<h2> Table of contents</h2>
+<ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#design">Design</a></li>
+    <li><a href="#application-functions">Application Functions</a></li>
+    <li><a href="#interface">Interface</a></li>
+    <li><a href="#qoc">QOC - Questions, Options, Criteria </a></li>
+    <li><a href="#personas">Personas</a></li>
+</ul>
+
+<h3 id="introduction">Introduction</h3>
+<p>DA - Dataset Augmentation is a tool developed for automatically generating new data from the current one by using a
+    neural network.</p>
+<p>The application was initially developed for the <a href="https://minerl.io/">MineRL competition</a>, its main purpose
+    being
+    splitting the videos from the dataset and rejoining parts from different videos to generate new data.
+<p>After seeing its effectiveness on the MineRL dataset, the application was expanded to support other datasets, by
+    offering the option to provide your own neural network model.</p>
+
+<h3 id="design">Design</h3>
+<p>The application was designed in <a
+        href="https://www.figma.com/file/lblBmB5YZtso9FXrKWmSLI/HCIHomework?node-id=0%3A1">Figma</a>
+<p>
+    <img src="main-screen.png" alt="Main screen">
+    <img src="ad-screen.png" alt="Augment dataset screen">
+    <img src="tr-screen.png" alt="Train model screen">
+    <img src="te-screen.png" alt="Test model screen">
+
+<h3 id="application-functions">Application Functions</h3>
+<p>The following major functions are identified:</p>
+<ul>
+    <li>Generate a new dataset from the current one using a neural network</li>
+    <li>Train a neural network model that can be used for custom datasets</li>
+    <li>Test the neural network used to identify the splitting points</li>
+</ul>
+
+<h3 id="interface">MAP</h3>
+<p>The following concepts were used while designing the application</p>
+<ul>
+    <li>Minimalism, offering easy access to the user, without filler content</li>
+    <li>Reused the same template for different windows so the user has a familiar feeling and gets used to the
+        applicaiton easier.
+    </li>
+    <li>Used only 2 contrasting colors (except black and white), so that readability is improved. The colors were
+        selected using this <a href="https://coolors.co/">tool</a></li>
+</ul>
+
+<h3 id="qoc">QOC - Questions, Options, Criteria</h3>
+<p>Q: How is the user introduced to the application?</p>
+<p>A: The user is presented with the main screen which has 3 suggestive options to choose from.</p>
+<p>Q: What datasets can the user augment?</p>
+<p>A: The user can augment any dataset containing videos which have a repetitive splitting point</p>
+<p>Q: Can the user customize the dataset generation?</p>
+<p>A: The user can specify from a list of video rejoining methods and also the selection of videos to rejoin.</p>
+
+
+<h3 id="personas">Personas</h3>
+
+<div id="user1" class="users">
+    <div class="male-user">
+        <p id="user1-img"><i class="fa fa-address-card"></i></p>
+        <div class="user-info">
+            <div class="user-bio">
+                <p><i class="fa fa-user"></i><span id="user1-name">Ander Durham</span></p>
+                <p><i class="fa fa-birthday-cake"></i><span id="user1-age">22</span> years old</p>
+                <p><i class="fa fa-cog"></i><span id="user1-job">Gamer</span></p>
+                <p><i class="fa fa-desktop"></i><span id="user1-device">Desktop</span></p>
+                <p><i class="fa fa-quote-left"></i><span id="user1-quote">I know $20 and $19.99 are the same thing, but a deal is a deal.</span>
+                </p>
+                <br>
+            </div>
+            <h3><i class="fa fa-trophy"></i><strong>Goals</strong><a data-html2canvas-ignore="" href="#"
+                                                                     class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                     id="edit-goals"></a></h3>
+            <ol id="user1-goals" class="details">
+                <li id="user1-goal1">Find recommendations based on my preferences</li>
+                <li id="user1-goal2">To become an influencer of this content</li>
+                <li id="user1-goal3">Learn about something new</li>
+            </ol>
+            <h3><i class="fa fa-thumbs-down"></i><strong>Frustrations</strong><a data-html2canvas-ignore="" href="#"
+                                                                                 class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                                 id="edit-frustrations"></a></h3>
+            <ol id="user1-frustrations" class="details">
+                <li id="user1-frustration1">Hate when a checkout process takes a long time</li>
+                <li id="user1-frustration2">Seeing options with very little details</li>
+                <li id="user1-frustration3">Fonts that are too thin to read</li>
+            </ol>
+            <h3><i class="fa fa-star"></i><strong>Motivations</strong><a data-html2canvas-ignore="" href="#"
+                                                                         class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                         id="edit-motivations"></a></h3>
+            <ol id="user1-motivations" class="details">
+                <li id="user1-motivation1">I love the idea of being able to easily find a new online community</li>
+                <li id="user1-motivation2">I want to discover new things</li>
+                <li id="user1-motivation3">I love being able to save my cart so I can make my purchase later</li>
+            </ol>
+        </div><!-- closes .user-info -->
+    </div><!-- closes .male-user -->
+</div>
+
+<div id="user2" class="users">
+    <div class="male-user">
+        <p id="user2-img"><i class="fa fa-address-card"></i></p>
+        <div class="user-info">
+            <div class="user-bio">
+                <p><i class="fa fa-user"></i><span id="user2-name">Dawson Dixon</span></p>
+                <p><i class="fa fa-birthday-cake"></i><span id="user2-age">28</span> years old</p>
+                <p><i class="fa fa-cog"></i><span id="user2-job">Data scientist</span></p>
+                <p><i class="fa fa-desktop"></i><span id="user2-device">Macbook Pro 16'</span></p>
+                <p><i class="fa fa-quote-left"></i><span id="user2-quote">I'm a very visual person so I love seeing images that help paint the picture.</span>
+                </p>
+                <br>
+            </div>
+            <h3><i class="fa fa-trophy"></i><strong>Goals</strong><a data-html2canvas-ignore="" href="#"
+                                                                     class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                     id="edit-goals"></a></h3>
+            <ol id="user2-goals" class="details">
+                <li id="user2-goal1">I want to find some inspiration for an upcoming project</li>
+                <li id="user2-goal2">I want to avoid boredom by talking with other people</li>
+                <li id="user2-goal3">Earn loyalty points that would help me get a better deal</li>
+            </ol>
+            <h3><i class="fa fa-thumbs-down"></i><strong>Frustrations</strong><a data-html2canvas-ignore="" href="#"
+                                                                                 class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                                 id="edit-frustrations"></a></h3>
+            <ol id="user2-frustrations" class="details">
+                <li id="user2-frustration1">Not being able to display more results per page makes searching take
+                    longer
+                </li>
+                <li id="user2-frustration2">Hate cluttered layouts</li>
+                <li id="user2-frustration3">Hate when a checkout process takes a long time</li>
+            </ol>
+            <h3><i class="fa fa-star"></i><strong>Motivations</strong><a data-html2canvas-ignore="" href="#"
+                                                                         class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                         id="edit-motivations"></a></h3>
+            <ol id="user2-motivations" class="details">
+                <li id="user2-motivation1">I love the idea of being able to easily find a new online community</li>
+                <li id="user2-motivation2">I want to discover new things</li>
+                <li id="user2-motivation3">I love being able to save my cart so I can make my purchase later</li>
+            </ol>
+        </div><!-- closes .user-info -->
+    </div><!-- closes .male-user -->
+</div>
+
+<div id="user3" class="users">
+    <div class="male-user">
+        <p id="user3-img"><i class="fa fa-address-card"></i></p>
+        <div class="user-info">
+            <div class="user-bio">
+                <p><i class="fa fa-user"></i><span id="user3-name">Kiyan Dempsey</span></p>
+                <p><i class="fa fa-birthday-cake"></i><span id="user3-age">25</span> years old</p>
+                <p><i class="fa fa-cog"></i><span id="user3-job">Youtuber</span></p>
+                <p><i class="fa fa-desktop"></i><span id="user3-device">Macbook Air 13'</span></p>
+                <p><i class="fa fa-quote-left"></i><span id="user3-quote">Getting confirmation through banner notifications always quells my anxiety.</span>
+                </p>
+                <br>
+            </div>
+            <h3><i class="fa fa-trophy"></i><strong>Goals</strong><a data-html2canvas-ignore="" href="#"
+                                                                     class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                     id="edit-goals"></a></h3>
+            <ol id="user3-goals" class="details">
+                <li id="user3-goal1">I want to find some inspiration for an upcoming project</li>
+                <li id="user3-goal2">I want to find out what other people have to say about a topic</li>
+                <li id="user3-goal3">Find recommendations based on my preferences</li>
+            </ol>
+            <h3><i class="fa fa-thumbs-down"></i><strong>Frustrations</strong><a data-html2canvas-ignore="" href="#"
+                                                                                 class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                                 id="edit-frustrations"></a></h3>
+            <ol id="user3-frustrations" class="details">
+                <li id="user3-frustration1">Red text on dark backgrounds is the worst!</li>
+                <li id="user3-frustration2">Hate when a checkout process takes a long time</li>
+                <li id="user3-frustration3">Too many colors being used unecessarily</li>
+            </ol>
+            <h3><i class="fa fa-star"></i><strong>Motivations</strong><a data-html2canvas-ignore="" href="#"
+                                                                         class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                         id="edit-motivations"></a></h3>
+            <ol id="user3-motivations" class="details">
+                <li id="user3-motivation1">Affordability</li>
+                <li id="user3-motivation2">Always glad when I get to see lots of options</li>
+                <li id="user3-motivation3">Affordability</li>
+            </ol>
+        </div><!-- closes .user-info -->
+    </div><!-- closes .male-user -->
+</div>
+
+<div id="user4" class="users">
+    <div class="male-user">
+        <p id="user-img"><i class="fa fa-address-card"></i></p>
+        <div class="user-info">
+            <div class="user-bio">
+                <p><i class="fa fa-user"></i><span id="user4-name">Azul Baldwin</span></p>
+                <p><i class="fa fa-birthday-cake"></i><span id="user4-age">21</span> years old</p>
+                <p><i class="fa fa-cog"></i><span id="user4-job">Student</span></p>
+                <p><i class="fa fa-desktop"></i><span id="user4-device">Macbook Pro 14'</span></p>
+                <p><i class="fa fa-quote-left"></i><span id="user4-quote">I love having my favorite things available without having to search for them.</span>
+                </p>
+                <br>
+            </div>
+            <h3><i class="fa fa-trophy"></i><strong>Goals</strong><a data-html2canvas-ignore="" href="#"
+                                                                     class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                     id="edit-goals"></a></h3>
+            <ol id="user4-goals" class="details">
+                <li id="user4-goal1">Entertain myself during free time</li>
+                <li id="user4-goal2">I want to find some inspiration for an upcoming project</li>
+                <li id="user4-goal3">Want to save my favorite options so I can check them at a later time</li>
+            </ol>
+            <h3><i class="fa fa-thumbs-down"></i><strong>Frustrations</strong><a data-html2canvas-ignore="" href="#"
+                                                                                 class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                                 id="edit-frustrations"></a></h3>
+            <ol id="user4-frustrations" class="details">
+                <li id="user4-frustration1">Breaking down a process helps me better understand it</li>
+                <li id="user4-frustration2">undefined</li>
+                <li id="user4-frustration3">Novelty fonts that are hard to read</li>
+            </ol>
+            <h3><i class="fa fa-star"></i><strong>Motivations</strong><a data-html2canvas-ignore="" href="#"
+                                                                         class="inline-flex items-center justify-center h-6 px-2 focus:shadow-outline focus:outline-none"
+                                                                         id="edit-motivations"></a></h3>
+            <ol id="user4-motivations" class="details">
+                <li id="user4-motivation1">I want to be able to see what my friends are interested in</li>
+                <li id="user4-motivation2">Transparency of information</li>
+                <li id="user4-motivation3">Being able to track my order or track my progress really speaks to my OCD
+                </li>
+            </ol>
+        </div><!-- closes .user-info -->
+    </div><!-- closes .male-user -->
+</div>
+
+
+</body>
+
+</html>

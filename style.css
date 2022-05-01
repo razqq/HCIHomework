@@ -1,0 +1,107 @@
+img.resize {
+    width:50%;
+    height: auto;
+}
+
+/* = = = = = = =
+BRAND COLORS
+primary - #ee7f3a
+primary dark - #eb5e30
+dark blue - #222937
+ = = = = = = = = */
+
+#mark, #mark a, #mark i{
+    color: #ee7f3a;
+}
+.users{
+    position: relative;
+}
+.fa-address-card{
+    font-size:6rem;
+    float: none;
+    margin-top: -8px;
+}
+.male-user, .female-user {
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 2em;
+    background: #EAEBE6;
+    vertical-align: top;
+    padding: 1em;
+    /*margin-right: 16px;*/
+    color: #222937;
+}
+#user-img{
+    text-align: center;
+}
+.user-info{
+    text-align:left
+}
+.user-bio p{
+    line-height: 1.75;
+}
+#user1button{
+    text-align:center;
+}
+i, h3{
+    padding-right:8px;
+    color:#c5c8ba;
+}
+.details{
+    margin-left:40px;
+    list-style: revert;
+}
+/*.details li{
+  list-style-type: none;
+  display: list-item;
+  visibility: visible;
+}
+.details li:before{
+  content: 'â€¢ ';
+  margin-left: -1em;
+}*/
+.primary{
+    color:#222937;
+}
+h1#title{
+    font-size: revert;
+    font-weight: revert;
+    margin: revert;
+    margin-bottom: 0.25em;
+}
+#open{
+    margin-bottom:0rem;
+}
+#user1button a{
+    background-color: #eb5e30;
+}
+#user1button a i{
+    color: #ffffff;
+}
+#user1button a:hover{
+    background-color: #ec6d43;
+}
+#user1button a:active{
+    background-color: #eb5e30;
+}
+ol#user1-goals:focus, ol#user1-frustrations:focus, ol#user1-motivations:focus{
+    outline:none;
+    background-color: #dedfd7;
+}
+#credit{
+    background-color: #ee7f3a;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+    .male-user, .female-user {
+        width: 500px;
+    }
+    .fa-address-card{
+        font-size:9rem;
+        display: inline-block;
+        float: left;
+        /*margin-bottom:0.15em;*/
+    }
+}
